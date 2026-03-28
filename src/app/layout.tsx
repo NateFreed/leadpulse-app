@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LeadPulse - AI Lead Scoring for Small Teams",
-  description: "AI-powered lead scoring and CRM for small sales teams. Know which leads to focus on. $19 per month.",
+  title: "LeadPulse - AI Lead Scoring for Small Sales Teams",
+  description: "AI-powered CRM that tells you which leads to focus on. From $19/mo — 10x simpler than Salesforce.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        {children}
+      </body>
     </html>
   );
 }
