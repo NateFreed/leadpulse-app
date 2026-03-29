@@ -55,6 +55,22 @@ export default function DealCard({ deal, contact, onClick }: DealCardProps) {
           <span>Close: {new Date(deal.expected_close).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
         )}
       </div>
+
+      {contact && (
+        <div className="flex items-center gap-2 mt-2 pt-2 border-t border-border">
+          <a href={`https://bookpulse.pages.dev/book`} target="_blank" rel="noopener noreferrer"
+            onClick={e => e.stopPropagation()}
+            className="text-[10px] text-accent hover:text-accent-light font-medium">
+            Book a call
+          </a>
+          <span className="text-border">·</span>
+          <a href={`https://proposalpulse.pages.dev/editor`} target="_blank" rel="noopener noreferrer"
+            onClick={e => e.stopPropagation()}
+            className="text-[10px] text-muted hover:text-foreground font-medium">
+            Send proposal
+          </a>
+        </div>
+      )}
     </div>
   );
 }

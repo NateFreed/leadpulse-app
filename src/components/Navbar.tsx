@@ -17,6 +17,7 @@ export default function Navbar() {
     { href: '/pipeline', label: 'Pipeline' },
     { href: '/contacts', label: 'Contacts' },
     { href: '/analytics', label: 'Analytics' },
+    { href: '/settings', label: 'Settings' },
   ];
 
   return (

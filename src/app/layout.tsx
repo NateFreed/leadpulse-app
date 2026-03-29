@@ -16,6 +16,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LeadPulse - AI Lead Scoring for Small Sales Teams",
   description: "AI-powered CRM that tells you which leads to focus on. From $19/mo — 10x simpler than Salesforce.",
+  openGraph: {
+    title: "LeadPulse - AI Lead Scoring CRM",
+    description: "AI tells you which leads to focus on. From $19/mo.",
+    type: "website",
+    siteName: "LeadPulse",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LeadPulse - AI Lead Scoring CRM",
+    description: "AI tells you which leads to focus on. From $19/mo.",
+  },
+  keywords: ["CRM", "lead scoring", "sales pipeline", "AI sales", "small business CRM", "lead management"],
 };
 
 export default function RootLayout({
